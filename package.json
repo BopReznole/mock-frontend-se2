@@ -1,0 +1,21 @@
+{
+  "name": "render-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "start-server-and-test start http://localhost:3000 'cypress run --spec cypress/e2e/frontend.cy.js'",
+    "cypress:open": "cypress open"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.0",
+    "start-server-and-test": "^2.0.0"
+  }
+}
