@@ -1,21 +1,41 @@
 {
   "name": "render-frontend",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "start-server-and-test start http://localhost:3000 'cypress run --spec cypress/e2e/frontend.cy.js'",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "eject": "react-scripts eject"
   },
   "engines": {
     "node": "22.x"
   },
   "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^4.18.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "cypress": "^12.17.0",
     "start-server-and-test": "^2.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

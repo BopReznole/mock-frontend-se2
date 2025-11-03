@@ -1,55 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Render Frontend Demo - React App"
+    />
     <title>Render Frontend Demo</title>
-    <style>
-      body { 
-        background:#0f172a; 
-        color:#f8fafc; 
-        font-family: system-ui, sans-serif; 
-        padding:2rem; 
-      }
-      .card {
-        background:#1e293b;
-        border-radius:1rem;
-        padding:1.5rem;
-        max-width:480px;
-        box-shadow:0 20px 40px rgba(0,0,0,.5);
-      }
-      button {
-        font-size:1rem;
-        padding:.6rem 1rem;
-        border-radius:.5rem;
-        border:none;
-        cursor:pointer;
-      }
-      pre {
-        background:#000;
-        padding:1rem;
-        border-radius:.5rem;
-        white-space:pre-wrap;
-        word-break:break-word;
-      }
-    </style>
   </head>
   <body>
-    <div class="card">
-      <h1>Frontend ↔ Backend demo</h1>
-      <p>This page will call the backend on Render and show the JSON response.</p>
-      <button id="btn">Call backend</button>
-      <pre id="out">(click the button)</pre>
-    </div>
-
-    <script>
-      // BACKEND_URL will be injected via env at build/run time fallback localhost
-      const BACKEND_URL = window.BACKEND_URL || 'http://localhost:3001';
-
-      document.getElementById('btn').addEventListener('click', async () => {
-        const res = await fetch(BACKEND_URL + '/api/hello');
-        const data = await res.json();
-        document.getElementById('out').textContent = JSON.stringify(data, null, 2);
-      });
-    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>

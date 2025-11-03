@@ -1,0 +1,50 @@
+body { 
+  background:#0f172a; 
+  color:#f8fafc; 
+  font-family: system-ui, sans-serif; 
+  padding:2rem; 
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.card {
+  background:#1e293b;
+  border-radius:1rem;
+  padding:1.5rem;
+  max-width:480px;
+  box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+button {
+  font-size:1rem;
+  padding:.6rem 1rem;
+  border-radius:.5rem;
+  border:none;
+  cursor:pointer;
+  background: #3b82f6;
+  color: white;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+pre {
+  background:#000;
+  padding:1rem;
+  border-radius:.5rem;
+  white-space:pre-wrap;
+  word-break:break-word;
+  color: #f8fafc;
+}
+
+h1 {
+  margin-top: 0;
+}
+
